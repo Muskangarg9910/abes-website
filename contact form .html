@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portal</title>
+</head>
+<body>
+  <h2 align="center">University Office Locations</h2>
+  <table border="1" cellpadding="8" cellspacing="0" align="center" width="60%">
+    <tr bgcolor="#f2f2f2">
+      <th>Campus Region</th>
+      <th>Contact Number</th>
+      <th>Help Desk Email</th>
+    </tr>
+    <tr>
+      <td>North Campus (Delhi)</td>
+      <td>+91 11 2766 7725</td>
+      <td>delhi.desk@univ.ac.in</td>
+    </tr>
+    <tr>
+      <td>West Campus (Mumbai)</td>
+      <td>+91 22 2654 3000</td>
+      <td>mumbai.desk@univ.ac.in</td>
+    </tr>
+    <tr>
+      <td>South Campus (Bengaluru)</td>
+      <td>+91 80 2296 1000</td>
+      <td>bangalore.desk@univ.ac.in</td>
+    </tr>
+  </table>
+
+  <br><hr width="60%"><br>
+
+  <h2 align="center">New Student Admission Form</h2>
+  <form action="/submit" method="POST">
+    <!-- Simple inner table used ONLY to cleanly align the form's text fields -->
+    <table border="0" cellpadding="6" align="center">
+      <tr>
+        <td><label>Full Name:</label></td>
+        <td><input type="text" name="student_name" required></td>
+      </tr>
+      <tr>
+        <td><label>Date of Birth:</label></td>
+        <td><input type="date" name="dob" required></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          <input type="radio" name="gender" value="Male" checked> Male
+          <input type="radio" name="gender" value="Female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td><label>Aadhaar Number:</label></td>
+        <td><input type="text" name="aadhaar" maxlength="12" placeholder="12-digit number" required></td>
+      </tr>
+      <tr>
+        <td><label>Course Applied:</label></td>
+        <td>
+          <select name="course">
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>B.Com</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <br>
+          <input type="reset" value="Clear Form"> &nbsp;
+          <input type="submit" value="Submit Application">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
